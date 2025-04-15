@@ -1,0 +1,155 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Title styling */
+.Title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Form container */
+.form {
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input field */
+.input1 {
+  width: 80%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.input1:focus {
+  outline: none;
+  border-color: #4aa6db;
+}
+
+/* Submit button */
+.submit {
+  font-size: 1rem;
+  padding: 10px 25px;
+  background-color: #4aa6db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+  
+}
+
+.submit:hover {
+  background-color: #308bc1;
+}
+
+/* Strength bar wrapper */
+.strength {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto 10px;
+}
+
+.strengthbar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+  margin-top: 10px;
+}
+
+.strengthbar-fill {
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Feedback message */
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .Title,
+  .form,
+  .strength {
+    width: 90%;
+  }
+
+  .input1 {
+    width: 100%;
+  }
+}
+
+.generate-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.generate-btn:hover {
+  background-color: #218838;
+}
+.autocomplete-box {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.suggestion-chip {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+.suggestion-chip:hover {
+  background-color: #ddd;
+  align-items: center;
+}
+

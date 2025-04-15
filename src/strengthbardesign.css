@@ -1,0 +1,30 @@
+.strength-bar-container {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .bar {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .bar.weak {
+    background-color: red;
+  }
+  
+  .bar.medium {
+    background-color: orange;
+  }
+  
+  .bar.strong {
+    background-color: #a8e063; /* Yellow-Green */
+  }
+  
+  .bar.verystrong {
+    background-color: #00cc66; /* Bright Green */
+  }
+  
